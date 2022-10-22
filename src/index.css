@@ -1,13 +1,104 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+html {
+  box-sizing: border-box;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  background-color: #f89b7e;
+}
+.container {
+  width: 90%;
+  margin: 70px auto 0;
+  max-width: 400px;
+  
+}
+h1, h2 {
+  font-family: 'Indie Flower', cursive;
+  color: white;
+  text-align: center;
+}
+.searchInput {
+  border: none;
+  border-radius: 10px;
+  height: 30px;
+  width: 100%;
+  padding: 0 10px 0;
+  color: #f7c69f;
+  font-family: 'Indie Flower', cursive; 
+  font-size: 17px;
+}
+.todoList {
+  background-color: white;
+  border-radius: 15px;
+  margin-top: 25px;
+  width: 100%;
+  padding: 15px;
+}
+.todoList p {
+  font-family: 'Kalam', cursive;
+  text-align: center;
+  color:#f89b7e;
+  font-size: 25px;
+  margin-bottom: 0;
+}
+.listItem {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+}
+.listItemLabel {
+  font-family:'Indie Flower', cursive ;
+  font-size: 22px;
+  display: flex;
+  gap: 10px;
+}
+.listItemLabel input{
+  display: none;
+}
+.listItemLabel p {
+  margin: 5px;
+  display: block;
+}
+.checkmark {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #f89b7e;
+  display: inline-block;
+  border-radius: 8px;
+  background: #f7c69f url(https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/White_check.svg/1200px-White_check.svg.png) center/1250% no-repeat;
+  transition: background-size 0.2s ease;
+}
+.checked {
+  background-size: 60%;
+  transition: background-size 0.25s cubic-bezier(0.7, 0, 0.18, 1.24);
+}
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+}
+.button {
+  border: 1px solid #f7c69f;
+  width: 37px;
+  height: 37px;
+  color: white;
+  font-weight: bolder;
+  font-size: 20px;
+  background-color: #f7c69f;
+  border-radius: 50%;
+  transition: all 1s ;
+  transform: scale(1);
+}
+.button:hover {
+  transform: rotate(180deg) scale(1.1);
+  border: 1px solid #f89b7e ;
+}
+.TodoCounter {
+  font-family: 'Kalam';
+  font-weight: 300;
+}
+.listItem svg {
+  width: 20px;
+  height: 20px;
+  fill: #b5a28b;
 }
