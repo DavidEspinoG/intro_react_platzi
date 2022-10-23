@@ -38,7 +38,7 @@ function AppUI(){
             <CreateTodoButton/>
             </TodoList>
             <TodoCounter/>    
-            {!!openModal && (
+            {openModal === true && (
                 <Modal>
                     <TodoForm></TodoForm>  
                 </Modal> 
