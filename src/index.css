@@ -24,7 +24,7 @@ h1, h2 {
   height: 30px;
   width: 100%;
   padding: 0 10px 0;
-  color: #f7c69f;
+  /* color: #f7c69f; */
   font-family: 'Indie Flower', cursive; 
   font-size: 17px;
 }
@@ -101,4 +101,9 @@ h1, h2 {
   width: 20px;
   height: 20px;
   fill: #b5a28b;
+}
+input:focus {
+  border-color: rgb(255, 144, 0);
+  box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075)inset, 0 0 8px rgba(255,144,0,0.6);
+  outline: 0 none;
 }
